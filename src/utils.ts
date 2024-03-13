@@ -27,7 +27,7 @@ export const projects:projectType[] = [
         type:"WebApp"
     },
     {
-        name:'Form Builder',
+        name:'Jobster',
         url:"",
         techstack:["Nextjs","Tailwind,Radix UI,ShadCN","Dnd Kit","PostgreSQL"],
         image:"/JobsterImage.jpg",
@@ -38,7 +38,7 @@ export const projects:projectType[] = [
         name:'Chatting Application IOS',
         url:"",
         techstack:["React with Redux","Nodejs/Express","MongoDB and Redis","MapBox for location","SockerIO","Material UI"],
-        image:"/tinderlogo.jfif",
+        image:"/chatting-social-media-software-logo-which-will-fit-upscaled.jpg",
         description:"MERN stack tinder clone built with scalable chat system using redis pubsub and socket IO",
         type:"WebApp"
     },
