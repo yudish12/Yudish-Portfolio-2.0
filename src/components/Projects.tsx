@@ -13,32 +13,32 @@ const Projects = () => {
                     {selectedId && (
                         <motion.div
                             style={{
+                                border:"2px solid red",
+                                height:"100vh",
                                 position: "fixed",
-                                top: "50%",
-                                width: "50%",
-                                display: "flex",
-                                border: "2px solid red",
-                                alignItems: "center",
-                                flexDirection: "column"
+                                top: "0%",
+                                width:"100vw",
+                                zIndex:50,
+                                display:"flex",
+                                justifyContent:"center",
+                                background:" rgba(0,0,0,0.50)"
                             }}
-                            exit={{
-                                y: -20,
-                                opacity: 0,
-                                filter: "blur(5px)",
-                                transition: { ease: "easeIn", duration: 0.22 }
-                              }}
-                              initial={{ opacity: 0, y: -15 }}
-                              animate={{
-                                opacity: 1,
-                                y: 0,
-                                filter: "blur(0px)",
-                                transition: { type: "spring", duration: 0.7 }
-                              }}
-                            className='left-[25vw] z-40 bg-slate-800'
-                            layoutId={selectedId}>
-                            <motion.h5>{selectedId}</motion.h5>
-                            <motion.h2>{selectedId}</motion.h2>
-                            <motion.button onClick={() => setSelectedId(null)} >Close</motion.button>
+                        >
+                            <motion.div
+                                style={{
+                                    position: "fixed",
+                                    top: "50%",
+                                    width: "90%",
+                                    margin:"0 auto",
+                                    display: "flex",
+                                    border: "2px solid red",
+                                }}
+                                className='z-40 bg-slate-800'
+                                layoutId={selectedId}>
+                                <motion.h5>{selectedId}</motion.h5>
+                                <motion.h2>{selectedId}</motion.h2>
+                                <motion.button onClick={() => setSelectedId(null)} >Close</motion.button>
+                            </motion.div>
                         </motion.div>
 
                     )}
