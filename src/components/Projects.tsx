@@ -1,10 +1,10 @@
-import { projects } from '@/utils'
+import { projectType, projects } from '@/utils'
 import React, { useState } from 'react'
 import Cards from './Cards'
 import { AnimatePresence, motion } from 'framer-motion'
 
 const Projects = () => {
-    const [selectedId, setSelectedId] = useState<null | string>(null)
+    const [selectedId, setSelectedId] = useState<null | projectType>(null)
 
     return (
         <>
@@ -21,7 +21,7 @@ const Projects = () => {
                                 zIndex:50,
                                 display:"flex",
                                 justifyContent:"center",
-                                background:" rgba(0,0,0,0.50)"
+                                background:" rgba(0,0,0,0.50)",
                             }}
                         >
                             <motion.div
@@ -34,9 +34,10 @@ const Projects = () => {
                                     border: "2px solid red",
                                 }}
                                 className='z-40 bg-slate-800'
-                                layoutId={selectedId}>
-                                <motion.h5>{selectedId}</motion.h5>
-                                <motion.h2>{selectedId}</motion.h2>
+                                layoutId={selectedId.name}>
+                                <motion.img width={200} height={200} src={selectedId.image} />
+                                <motion.h5>{selectedId.name}</motion.h5>
+                                <motion.h2>{selectedId.url}</motion.h2>
                                 <motion.button onClick={() => setSelectedId(null)} >Close</motion.button>
                             </motion.div>
                         </motion.div>

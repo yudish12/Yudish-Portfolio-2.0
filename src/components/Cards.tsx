@@ -3,7 +3,7 @@ import { motion, Variants } from "framer-motion";
 import Image from 'next/image';
 import { projectType } from '@/utils';
 
-const Cards = (props:{project:projectType,setSelectedId:React.Dispatch<React.SetStateAction<string | null>>}) => {
+const Cards = (props:{project:projectType,setSelectedId:React.Dispatch<React.SetStateAction<projectType | null>>}) => {
 	const {project,setSelectedId} = props
 	const cardVariants: Variants = {
 		offscreen: {
@@ -21,7 +21,7 @@ const Cards = (props:{project:projectType,setSelectedId:React.Dispatch<React.Set
 
 	return (
 		<motion.div
-			layoutId={project.name} onClick={() => setSelectedId(project.name)}
+			layoutId={project.name} onClick={() => setSelectedId(project)}
 			initial="offscreen"
 			whileInView="onscreen"
 			viewport={{ once: true, amount: 0.8 }}
