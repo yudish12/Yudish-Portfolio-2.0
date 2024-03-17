@@ -21,6 +21,7 @@ const Cards = (props:{project:projectType,setSelectedId:React.Dispatch<React.Set
 
 	return (
 		<motion.div
+			className='cursor-pointer'
 			layoutId={project.name} onClick={() => setSelectedId(project)}
 			initial="offscreen"
 			whileInView="onscreen"

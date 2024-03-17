@@ -2,6 +2,8 @@ import { projectType, projects } from '@/utils'
 import React, { useState } from 'react'
 import Cards from './Cards'
 import { AnimatePresence, motion } from 'framer-motion'
+import Image from 'next/image'
+import Link from 'next/link'
 
 const Projects = () => {
     const [selectedId, setSelectedId] = useState<null | projectType>(null)
@@ -13,7 +15,6 @@ const Projects = () => {
                     {selectedId && (
                         <motion.div
                             style={{
-                                border:"2px solid red",
                                 height:"100vh",
                                 position: "fixed",
                                 top: "0%",
@@ -27,18 +28,55 @@ const Projects = () => {
                             <motion.div
                                 style={{
                                     position: "fixed",
-                                    top: "50%",
-                                    width: "90%",
+                                    top: "30%",
+                                    left:"25vw",
+                                    width: "50%",
+                                    height:400,
                                     margin:"0 auto",
                                     display: "flex",
-                                    border: "2px solid red",
+                                    border: "1px ridge white",
+                                    borderRadius:"12px",
+                                    background:"#1A1A1A"
                                 }}
                                 className='z-40 bg-slate-800'
                                 layoutId={selectedId.name}>
-                                <motion.img width={200} height={200} src={selectedId.image} />
-                                <motion.h5>{selectedId.name}</motion.h5>
-                                <motion.h2>{selectedId.url}</motion.h2>
-                                <motion.button onClick={() => setSelectedId(null)} >Close</motion.button>
+                                <motion.div style={{
+                                    padding:20,
+                                    borderRadius:"12px",
+                                }}>
+                                    <motion.img 
+                                        style={{
+                                            width:"300px",
+                                            minWidth:"300px",
+                                            height:"250px",
+                                            borderRadius:"12px"
+                                        }} 
+                                        width={600} 
+                                        src={selectedId.image} 
+                                    />
+                                </motion.div>
+                                <motion.div className='p-8 rounded-[12px] w-full bg-black flex flex-col' >
+                                    <motion.h2>{selectedId.name}</motion.h2>
+                                    <motion.p>{selectedId.description}</motion.p>
+                                    <motion.div className='mt-4' >
+                                        <motion.h5 className='py-3 border-b-2 border-gray-500 font-medium'>PROJECT INFO</motion.h5>
+                                        <motion.div className='py-3 border-b-2 flex justify-between border-gray-500 font-medium'>
+                                            <p>Year</p>
+                                            <p>2023</p>
+                                        </motion.div>
+                                        <motion.div className='py-3 border-b-2 flex justify-between border-gray-500 font-medium'>
+                                            <p>Role</p>
+                                            <p>Front End Development</p>
+                                        </motion.div>
+                                    </motion.div>
+                                    <motion.div className='mt-3 flex gap-12' >
+                                        {selectedId.liveDemo && <Link href={selectedId.liveDemo} className='border-b-2 text-[#D3E97A] border-[#D3E97A]' >Live Demo</Link> }
+                                        <Link href={selectedId.url} className='border-b-2 text-[#D3E97A] border-[#D3E97A]' >Github URL</Link>
+                                    </motion.div>
+                                </motion.div>
+                                <motion.button className='absolute right-1 top-1 ' onClick={() => setSelectedId(null)} >
+                                    <Image src={'/icons8-cross.svg'} alt='Cross Icon' width={30} height={30} />
+                                </motion.button>
                             </motion.div>
                         </motion.div>
 

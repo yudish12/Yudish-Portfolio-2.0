@@ -4,7 +4,7 @@ import React from 'react'
 
 const Hero = () => {
     return (
-        <div className='flex justify-center items-center gap-8 mt-20 py-12 ' >
+        <div className='flex md:flex-row flex-col-reverse justify-center items-center gap-8 mt-20 py-12 ' >
             <div className="info max-w-[600px]">
                 <h1 className='text-5xl font-semibold' >
                     <span>HI, I AM</span><br /> YUDISH CHAKRAWARTY
@@ -27,7 +27,7 @@ const Hero = () => {
                 </div>
             </div>
             <div className="image">
-                <Image className='rounded-xl min-w-[300px]' alt='banner' src={'/82305974.jfif'} width={500} height={300} />
+                <Image className='rounded-xl sm:min-w-[300px]' alt='banner' src={'/82305974.jfif'} width={500} height={300} />
             </div>
 
         </div>
