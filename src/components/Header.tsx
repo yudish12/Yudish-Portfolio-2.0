@@ -8,7 +8,6 @@ const Header = () => {
 			<div className="right text-[#C7C7C7] bebas-neue text-xl flex gap-6 ">
 				<Link href={"#"} className='hover:underline cursor-pointer' >Personal Projects</Link>
 				<Link href={"#"} className='hover:underline cursor-pointer'>My Experience</Link>
-				<Link href={"#"} className='hover:underline cursor-pointer'>About Me</Link>
 				<Link href={"#"} className='hover:underline cursor-pointer'>My Blogs</Link>
 			</div>
 		</nav>

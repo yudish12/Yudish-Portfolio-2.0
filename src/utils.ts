@@ -8,6 +8,17 @@ export type projectType = {
     type?:string;
 }
 
+export type experience = {
+    company:string,
+    designation:string,
+    type:"Contractual"|"Internship"|"Full Time",
+}
+
+export type skills = {
+    type:string,
+    skills:string,
+}
+
 export const projects:projectType[] = [
     {
         name:'Form Builder',
@@ -46,4 +57,29 @@ export const projects:projectType[] = [
         type:"WebApp"
     },
 
+]
+
+
+export const skillsArr:skills[] = [
+    {
+        type:"Frontend",
+        skills:"Reactjs,Html,CSS,Javascript,Typescript,NextJs,Tailwind,Redux,React Native"
+    },
+    {
+        type:"Backend",
+        skills:"Nodejs,Express,Python,FastAPI,Kafka,SocketIO,Postman"
+    },
+    {
+        type:"Databases",
+        skills:"MongoDB,PostgreSQL,Redis,Firebase,Supabase"
+    },
+    {
+        type:"Devops",
+        skills:"Docker,AWS,Nginx,YAML,Selenium"
+    },
+    
+]
+
+export const jobs:experience[] = [
+    
 ]
