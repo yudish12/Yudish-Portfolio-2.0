@@ -22,8 +22,8 @@ export type skills = {
 export const projects:projectType[] = [
     {
         name:'Form Builder',
-        url:"",
-        liveDemo:"asd",
+        url:"https://github.com/yudish12/FormBuilder-NextJS",
+        liveDemo:"https://form-builder-next-js-weld.vercel.app/",
         techstack:["Nextjs","Tailwind,Radix UI,ShadCN","Dnd Kit","PostgreSQL"],
         image:"/form-builder-1.png",
         description:"This is a Form Builder Web app where a user can build there own form using the drag and drop builder I have provided and then the form could be published to other people they can further fill and submission analytics visits,bounce rate etc could be tracked on details page",

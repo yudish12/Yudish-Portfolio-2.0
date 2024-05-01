@@ -1,4 +1,5 @@
 "use client"
+import Contact from "@/components/Contact";
 import Experience from "@/components/Experience";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
@@ -24,8 +25,8 @@ export default function Home() {
 					<Hero />
 					<Projects />
 					<Skills/>
-					<hr className="mt-8" />
 					<Experience/>
+					<Contact/>
 				</motion.div>
 			</AnimatePresence>
 		</main >

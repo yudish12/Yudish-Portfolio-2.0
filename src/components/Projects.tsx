@@ -55,7 +55,7 @@ const Projects = () => {
                                         src={selectedId.image} 
                                     />
                                 </motion.div>
-                                <motion.div className='p-8 rounded-[12px] w-full bg-black flex flex-col' >
+                                <motion.div className='p-8 rounded-[12px] w-full bg-black flex flex-col   overflow-y-auto' >
                                     <motion.h2>{selectedId.name}</motion.h2>
                                     <motion.p>{selectedId.description}</motion.p>
                                     <motion.div className='mt-4' >
@@ -74,7 +74,7 @@ const Projects = () => {
                                         <Link href={selectedId.url} className='border-b-2 text-[#D3E97A] border-[#D3E97A]' >Github URL</Link>
                                     </motion.div>
                                 </motion.div>
-                                <motion.button className='absolute right-1 top-1 ' onClick={() => setSelectedId(null)} >
+                                <motion.button className='absolute right-5 top-1 ' onClick={() => setSelectedId(null)} >
                                     <Image src={'/icons8-cross.svg'} alt='Cross Icon' width={30} height={30} />
                                 </motion.button>
                             </motion.div>
@@ -84,7 +84,7 @@ const Projects = () => {
                 </AnimatePresence>
 
                 <h1 className='text-[#FFFFF] tracking-[3px] bebas-neue px-12 py-4 mt-4 text-3xl'>Personal Projects</h1>
-                <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-6 px-12'>
+                <div className="grid grid-cols-1 md:grid-cols-2 md:grid-rows-1 sm:grid-rows-2 grid-rows-4 lg:grid-cols-4 gap-x-8 gap-y-8 px-12">
                     {projects.map((e) => <Cards project={e} setSelectedId={setSelectedId} key={e.name} />)}
                 </div>
             </div>

@@ -5,9 +5,9 @@ import React from 'react'
 const Hero = () => {
     return (
         <div className='flex md:flex-row flex-col-reverse justify-center items-center gap-8 mt-20 py-12 ' >
-            <div className="info max-w-[600px]">
-                <h1 className='text-5xl font-semibold' >
-                    <span>HI, I AM</span><br /> YUDISH CHAKRAWARTY
+            <div className="info md:max-w-[600px] max-w-[400px] px-8 sm:px-0">
+                <h1 style={{lineHeight:1.3}} className='sm:text-5xl text-3xl font-semibold' >
+                    <span>HI, &nbsp;I AM</span>&nbsp; YUDISH CHAKRAWARTY
                 </h1>
                 <p className='text-lg text-[#C7C7C7]' >
                     A Software Developer Based out of India.<br />
@@ -26,8 +26,8 @@ const Hero = () => {
                     </Link>
                 </div>
             </div>
-            <div className="image">
-                <Image className='rounded-xl sm:min-w-[300px]' alt='banner' src={'/82305974.jfif'} width={500} height={300} />
+            <div className="image flex justify-center">
+                <Image className='rounded-xl max-w-[80%] sm:max-w-[100%]' alt='banner' src={'/82305974.jfif'} width={500} height={300} />
             </div>
 
         </div>
