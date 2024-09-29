@@ -41,7 +41,7 @@ const Experience = () => {
                     <span className='md:text-3xl text-2xl font-bold text-[#C7C7C7] bebas-neue tracking-[2px]' ><u>Backend Developer Experience</u></span><br />
                     I have worked as a Backend developer at Breakway IT solutions which was also a service based startup where I have worked on building a scalable backend solution using  <strong><u>Nodejs, Express, Mongodb, Elastic Search, Redis,   SocketIO</u></strong> Learned how to scale backend api&apos;s and microservice architecture deployment of backend services.
                 </p>
-                <Link className='text-[#D3E97A] border-b-2 w-[110px] border-[#D3E97A]' download={true} href={"/CV Yudish Chakrawarty 15914802720 CSE MAIT 9810870142 (2) (1) (2) (1) (1) (1).pdf"} >View Resume</Link>
+                <Link className='text-[#D3E97A] border-b-2 w-[110px] border-[#D3E97A]' download={true} href={"/yudish-new-resume.pdf"} >View Resume</Link>
                 
             </div>
 
