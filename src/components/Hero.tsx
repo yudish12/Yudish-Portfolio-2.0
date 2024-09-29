@@ -27,7 +27,7 @@ const Hero = () => {
                 </div>
             </div>
             <div className="image flex justify-center">
-                <Image className='rounded-xl max-w-[80%] sm:max-w-[100%]' alt='banner' src={'/82305974.jfif'} width={500} height={300} />
+                <Image className='rounded-xl max-w-[80%] sm:max-w-[100%]' alt='banner' src={'https://avatars.githubusercontent.com/u/82305974?s=96&v=4'} width={500} height={300} />
             </div>
 
         </div>
