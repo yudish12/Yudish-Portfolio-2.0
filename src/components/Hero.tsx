@@ -27,7 +27,7 @@ const Hero = () => {
                 </div>
             </div>
             <div className="image flex justify-center">
-                <Image className='rounded-xl max-w-[80%] sm:max-w-[100%]' alt='banner' src={'/yudish_pfp.jpg'} width={500} height={300} />
+                <Image className='rounded-xl max-w-[80%] sm:max-w-[100%]' alt='banner' src={'/yudish_pfp.jpg'} width={400} height={300} />
             </div>
 
         </div>
