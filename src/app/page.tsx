@@ -9,7 +9,7 @@ import { AnimatePresence, motion } from 'framer-motion'
 
 export default function Home() {
 	return (
-		<main className="flex min-h-screen flex-col items-center gap-12 px-12 py-6">
+		<main className="flex min-h-screen flex-col items-center gap-12 sm:px-12 px-6 py-6">
 			<Header />
 			<AnimatePresence>
 				<motion.div
