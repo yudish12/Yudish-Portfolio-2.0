@@ -34,7 +34,7 @@ export const projects:projectType[] = [
         url:"",
         liveDemo:"asd",
         techstack:["React with Redux","Nodejs/Express","MongoDB and Redis","MapBox for location","SockerIO","Material UI"],
-        image:"/tinderlogo.jfif",
+        image:"/tinder_logo.png",
         description:"MERN stack tinder clone built with scalable chat system using redis pubsub and socket IO",
         type:"WebApp"
     },
