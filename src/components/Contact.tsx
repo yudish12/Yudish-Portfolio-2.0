@@ -23,7 +23,7 @@ const Contact = () => {
           className='md:text-7xl text-5xl font-semibold'
         >LET&apos;S CONNECT</h1>
         <p className='text-lg text-stone-400' >Say Hello at <Link className='border-b-2 text-[#D3E97A] border-[#D3E97A]' href={"mailto:yudishchakrawarty3042@gmail.com"} >yudishchakrawarty3042@gmail.com</Link></p>
-        <p className='text-lg text-stone-400' >For more info, here&apos;s my <Link className='text-[#D3E97A] border-b-2 w-[110px] border-[#D3E97A]' download={true} href={"/CV Yudish Chakrawarty 15914802720 CSE MAIT 9810870142 (2) (1) (2) (1) (1) (1).pdf"} >View Resume</Link></p>
+        <p className='text-lg text-stone-400' >For more info, here&apos;s my <Link className='text-[#D3E97A] border-b-2 w-[110px] border-[#D3E97A]' download={true} href={"/yudish-new-resume.pdf"} >View Resume</Link></p>
         <div className="socials flex">
           <Link className='rounded-full p-3' href={"https://www.linkedin.com/in/yudish-chakrawarty-6014a5208/"}>
             <Image src={'/bxl-linkedin.svg.png'} className='min-w-[20px]' alt='linked in' width={30} height={30} />
